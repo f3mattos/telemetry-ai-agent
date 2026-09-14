@@ -49,15 +49,6 @@ A solução adota uma **arquitetura em duas camadas**:
 
 ##  Arquitetura
 
-```mermaid
-graph TD
-    A[Sensoriamento Industrial] -->|Telemetria Contínua| B(Edge: PyTorch Autoencoder)
-    B -->|"Operação Nominal (MSE < Limiar)"| C[Dados Descartados / Operação Normal]
-    B -->|"Anomalia (MSE > Limiar)"| D(Cloud: OpenAI Responses API)
-    D -->|Relatório Gerencial Executivo| E[Dashboard / Alertas C-Level]
- Tecnologias
-As seguintes ferramentas foram utilizadas na construção do projeto:
-
 Python 3.10+
 
 PyTorch — Treinamento e inferência da rede neural Autoencoder
