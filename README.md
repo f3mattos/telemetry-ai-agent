@@ -53,7 +53,7 @@ graph TD
     B -->|Operação Nominal MSE < Limiar| C[Dados Descartados / Operação Normal]
     B -->|Anomalia MSE > Limiar| D(Cloud: OpenAI Responses API)
     D -->|Relatório Gerencial Executivo| E[Dashboard / Alertas C-Level]
-🛠 Tecnologias
+ Tecnologias
 As seguintes ferramentas foram utilizadas na construção do projeto:
 
 Python 3.10+
