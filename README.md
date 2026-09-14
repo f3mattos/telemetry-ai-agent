@@ -44,6 +44,7 @@ A solução adota uma **arquitetura em duas camadas**:
 
 ---
 
+
 ##  Arquitetura
 
 ```mermaid
