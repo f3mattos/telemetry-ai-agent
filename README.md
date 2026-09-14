@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/python-v3.10+-blue?style=for-the-badge&logo=python" alt="Python Version">
 </p>
 
-<h1 align="center">🏭 Industrial Telemetry AI Agent</h1>
+<h1 align="center"> Telemetria industrial com Agentes de IA</h1>
 
 <p align="center">
   <b>Sistema Híbrido IIoT: Detecção de Anomalias via Deep Learning na Borda e Diagnóstico Executivo com IA Generativa na Nuvem.</b>
@@ -26,11 +26,11 @@
 
 ## 📌 Sobre o Projeto
 
-O **Industrial Telemetry AI Agent** resolve o desafio de monitorar sensores de alta frequência em ambientes industriais sem inflar os custos com chamadas recorrentes a LLMs.
+O **Telemetria industrial com Agentes de IA** resolve o desafio de monitorar sensores de alta frequência em ambientes industriais sem inflar os custos com chamadas recorrentes a LLMs.
 
 A solução adota uma **arquitetura em duas camadas**:
-1. **Edge (Borda):** Um Autoencoder em PyTorch processa 100% da telemetria contínua (temperatura, vibração e pressão), identificando desvios numéricos com baixíssima latência.
-2. **Cloud (Nuvem):** Apenas os eventos que violam o limiar crítico (MSE) são encaminhados para a **Responses API da OpenAI**, gerando laudos em linguagem executiva focados em causa raiz e tomada de decisão para a alta gestão.
+1. **Edge:** Um Autoencoder em PyTorch processa 100% da telemetria contínua (temperatura, vibração e pressão), identificando desvios numéricos com baixíssima latência.
+2. **Cloud:** Apenas os eventos que violam o limiar crítico (MSE) são encaminhados para a **Responses API da OpenAI**, gerando laudos em linguagem executiva focados em causa raiz e tomada de decisão para a alta gestão.
 
 ---
 
@@ -44,7 +44,7 @@ A solução adota uma **arquitetura em duas camadas**:
 
 ---
 
-## 📐 Arquitetura
+##  Arquitetura
 
 ```mermaid
 graph TD
@@ -67,7 +67,7 @@ Pandas & Scikit-Learn — Normalização e tratamento de matrizes numéricas
 
 Python-Dotenv — Carregamento de variáveis de ambiente
 
-🚀 Como Executar
+ Como Executar
 Pré-requisitos
 Antes de começar, você precisará ter instalado em sua máquina:
 
@@ -109,7 +109,7 @@ Bash
 uvicorn src.api:app --reload
 Acesse a documentação Swagger interativa em: http://127.0.0.1:8000/docs
 
-🔌 API Endpoints
+ API Endpoints
 POST /api/v1/analyze
 Processa um lote de telemetria e retorna o diagnóstico do Autoencoder com o laudo executivo da OpenAI (se houver anomalia).
 
@@ -140,7 +140,7 @@ JSON
   },
   "laudo_c_level": "RELATÓRIO DE RISCO OPERACIONAL...\n\nEquipamento: BOMBA_IND_01\nStatus: Alerta Crítico de Temperatura e Vibração...\nRecomendação: Interrupção imediata para inspeção do selo mecânico e rolamentos."
 }
-🤝 Contribuição
+ Contribuição
 Contribuições são sempre bem-vindas! Para contribuir:
 
 Faça um Fork do projeto.
@@ -157,4 +157,4 @@ Abra um Pull Request.
 Este projeto está sob a licença MIT.
 
 👤 Autor
-Feito por Felipe Mattos 👋 Entre em contato!
+Feito por Felipe Mattos!
